@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, 'front', 'index.html'));
 });
 
-// product api
+
 app.get("/all-products", (req, res) => {
   return res.send({
     products: products,

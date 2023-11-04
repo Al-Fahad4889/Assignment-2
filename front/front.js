@@ -3,15 +3,6 @@ function fetchProducts() {
       .then((res) => res.json())
       .then((data) => showData(data.products));
   }
-  
-  // function showData(response){
-  //     const responseDiv = document.getElementById("response");
-  //     responseDiv.innerHTML = `
-  //     <h1>Status: ${response.status}</h1>
-  //     <h1>Message: ${response.message}</h1>
-  //     `
-  // }
-  
   function showData(response) {
     const productInfoContainer = document.getElementById(
       "product-info-container"
